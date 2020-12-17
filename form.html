@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<main>
+<body>
+        <header>
+            <nav>
+                <header>
+                    <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./lists.html">Lists</a></li>
+                    <li><a href="./table.html">Table</a></li>
+                    <li><a href="./form.html">Form</a></li>
+                    <li><a href="./tv.html">Videos</a></li>
+                    <li><a href="./imprint.html">Impressum</a></li>
+                    </ul>
+                </header>
+            </nav>
+    
+        </header>
+
+<h1>Kontaktaufnahme</h1>
+<p>Geben Sie hier Ihre persönlichen Kontaktdaten ein:</p>
+<p><em>Mit <b><sup>*</sup></b> markierte Felder müssen ausgefüllt werden</em></p>
+<form action="action_page.php">
+    <div>
+        <label for="title">Anrede: </label>
+        <select name="titelName" id="title">
+            <option label="Wie dürfen wir Sie anreden?"></option>
+            <option value="------------------"></option>
+            <option value="mr">Herr</option>
+            <option value="mrs">Frau</option>
+            <option value="ms">Fräulein</option>
+            <option value="dr">Dr.</option>
+            <option value="prof">Prof.</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="fname">Vorname: *</label>
+        <input type="text" id="fname" name="vorName" placeholder="Max" required></label>
+    </div>
+    
+    <div>
+        <label for="sname">Nachname: *</label>
+        <input type="text" id="sname" name="nachName" placeholder="Mustermann" required></label>
+    </div>
+    
+    <div>
+        <label for="email">E-Mail: *</label>
+        <input type="text" id="email" name="eMail" placeholder="abc@abc.com" required></label>
+    </div>
+    
+    <div>
+        <label for="mobile">Mobilnummer: </label>
+        <input type="text" id="mobile" name="mobilNummer" placeholder="+49123456789"></label>
+    </div>
+
+    <div>
+        <label for="pw">Ihr gewünschtes Passwort:<br><sub>(mind. 4 Zeichen (große und kleine Buchstaben, Zahlen, Sonderzeichen)</sub></label>
+        <div>
+            <input type="password" id="pw" name="passWord" placeholder="df_#¢89¢" minlength="4" maxlength="12"></label>
+        </div>
+    </div>
+
+    <div>
+        <label for="rpw">Gewünschtes Passwort wiederholen: </label>
+        <div>
+            <input type="password" id="rpw" name="passWord" minlength="4" maxlength="12"></label>
+        </div>
+    </div>
+
+    <div>
+        <span>Bitte wählen Sie Ihr Geschlecht:</span>
+        <input type="radio" name="gender" id="male" value="malePersone">
+        <label for="male">Männlich</label>
+        <input type="radio" name="gender" id="female" value="femalePersone">
+        <label for="female">Weiblich</label>
+        <input type="radio" name="gender" id="divers" value="diVers">
+        <label for="divers">Divers</label>
+    </div>
+
+    <br>
+    
+    <div>
+        <label for="howDidYouHearAboutUs">Wie haben Sie von uns gehört?</label>
+        <div>
+            <input type="radio" name="linkedIn" id="linkedIn" value="some">
+            <label for="linkedin">LinkedIn</label>
+            <input type="radio" name="xing" id="xing" value="some">
+            <label for="xing">Xing</label>
+            <input type="radio" name="faceBook" id="facebook" value="some">
+            <label for="facebook">Facebook</label>
+            <input type="radio" name="instGram" id="instagram" value="some">
+            <label for="instagram">Instagram</label>
+            <input type="radio" name="twitter" id="twitter" value="some">
+            <label for="twitter">Twitter</label>
+        </div>
+        <div>
+            <textarea name="" id="howDidYouHearAboutUs" cols="30" rows="10" placeholder="Ein paar zusätzliche Stichworte" maxlength="1000"></textarea>
+        </div>
+    </div>
+
+<br>
+
+    <div>
+        <input type="checkbox" name="terms" id="acceptTerms" required>
+        <label for="acceptTerms">Akzeptieren Sie unsere <a href="" target="_new">AGB</a><sup>*</sup></label>
+    </div>
+
+    <div>
+        <input type="checkbox" name="mailList" id="mailingList" checked>
+        <label for="mailingList">Abonnieren Sie unseren Newsletter</label>
+    </div>
+
+<br>
+
+    <div>
+        <input type="submit" value="Ich will das jetzt!" width="750px">
+    </div>
+      
+<br>
+
+    <div>
+        <span>Ich brauche mehr Infos</span>
+        <div>
+            <label for="callback">Mobilnummer: </label>
+            <input type="text" id="callback" name="callBack" placeholder="+49123456789"></label>
+        </div>
+        <button type="button">Rufen Sie mich an</button>
+    </div>
+
+</form>
+</body>
+</main>
+</html>

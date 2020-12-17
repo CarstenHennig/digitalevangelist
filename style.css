@@ -1,0 +1,121 @@
+/* Selectors */
+
+body {
+    background-color: silver;
+    background-image: url(../img/background-sonne.png);
+    background-size: 3000px; 
+    background-clip: border-box;  
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+    border: solid 11px lightslategray;
+    width: 27%;
+    box-shadow: 7px 7px 7px grey;
+    border-radius: 20px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 7px 5px 7px;    
+}
+
+/* Grouping selectors */
+
+h1, h2, h3 {
+    text-align: left;
+    color: grey; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -1px;
+    border: solid 3px grey;
+    border-radius: 5px;
+    padding: 7px 10px 7px 10px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px gray;
+    width: 75%;
+}
+
+p {
+    text-align: left;
+    color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: -3;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+section p {
+    font-style: normal; font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+}
+
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; font-style: oblique;
+    letter-spacing: -3;
+}
+
+a:link {
+    text-decoration: none; color: gray; 
+}
+
+a:link a:visited {
+    text-align: left;
+    background-color: lightskyblue;
+}
+
+a:hover {
+    background-color:lightgray;
+}
+
+a:active {
+    background-color: gray
+}
+
+li:hover {
+    background-color: lightgray 
+}
+
+img {
+    border: 1px solid #ffffff;
+    opacity:0.7;
+}
+
+img:hover {
+    border: 1px solid #ffffff;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+nav {
+    text-align: left;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+table {
+    text-align: left;
+}
+
+ol {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+ul {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+input[type="text"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formular1, .formular2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: 12px;
+}
+
+.disclaimer {
+    text-align: left;
+    color: black; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: -3;
+}
